@@ -10,15 +10,19 @@ export const Character = () => {
 
   return (
     <>
-      <ul>
+      <h1>rickandmortyapi</h1>
+      <ul className="contenedor">
         {allCharacters.map((item, index) => (
-          <>
+          <li className="item">
             <img src={item.image} />
-            <h4>{item.name}</h4>
-            <p>{item.status}</p>
-            <p>{item.species}</p>
-            <p>{item.gender}</p>
-          </>
+            <div>
+              <h4>{item.name}</h4>
+              <p>
+                {item.status}-{item.species}
+              </p>
+              <p>{item.gender}</p>
+            </div>
+          </li>
         ))}
       </ul>
     </>
