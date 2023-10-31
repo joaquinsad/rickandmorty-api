@@ -21,6 +21,7 @@ export const Character = () => {
                 {item.status}-{item.species}
               </p>
               <p>{item.gender}</p>
+              <h3>{item.status}</h3>
             </div>
           </li>
         ))}
